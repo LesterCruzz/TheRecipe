@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+
+.header {
+    padding: 4rem;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .branding {
+        font-size: 2rem;
+    } 
+    .header__nav {
+      ul {
+        display: flex;
+        gap: 5rem;
+        a{
+            font-size: 1.9rem;
+            color: $clr--dark;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+  }
+}

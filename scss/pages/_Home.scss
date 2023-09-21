@@ -1,0 +1,92 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.banner {
+  padding: 8rem 0;
+  .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 15rem;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    width: 50%;
+
+    h1 {
+      font-family: $font--primary;
+      font-size: 6rem;
+      letter-spacing: 0.4rem;
+    }
+    p {
+      max-width: 63rem;
+      &:first-child {
+        letter-spacing: 0.7rem;
+      }
+    }
+  }
+  &__image {
+    img {
+      width: 98rem;
+    }
+  }
+}
+
+// Recipes
+
+.recipes {
+  padding: 8rem;
+  &__content {
+    h1 {
+      font-family: $font--primary;
+      letter-spacing: 0.1rem;
+      font-size: 4rem;
+      position: relative;
+      &:before {
+        content: " ";
+        position: absolute;
+        height: 0.2rem;
+        width: 50rem;
+        background-color: $clr--primary;
+        top: 2.8rem;
+        left: 0;
+      }
+      &:after {
+        content: " ";
+        position: absolute;
+        height: 0.2rem;
+        width: 50rem;
+        background-color: $clr--primary;
+        top: 2.8rem;
+        right: 0;
+      }
+    }
+  }
+  &__card {
+    text-align: center;
+    width: 42rem;
+    img {
+      height: 55rem;
+      width: 42rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    small {
+      letter-spacing: 1rem;
+      font-size: 1.5rem;
+      color: $clr--primary;
+    }
+    h2 {
+      font-family: $font--primary;
+      letter-spacing: 0.1rem;
+    }
+  }
+  .cards {
+    display: flex;
+    gap: 2rem;
+  }
+}

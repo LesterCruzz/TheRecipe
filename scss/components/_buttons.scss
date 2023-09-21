@@ -1,0 +1,12 @@
+@use "../abstract/" as *;
+
+.btn {
+  background-color: transparent;
+  padding: 1rem 3rem;
+  display: inline-block;
+
+  &.bg--primary {
+    background-color: $clr--primary;
+    color: $clr--light;
+  }
+}

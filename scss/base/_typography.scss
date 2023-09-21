@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@400;700&display=swap");
+
+$font--primary: "Gloock", serif;
+$font--secondary: "Montserrat", sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: $clr--dark;
+  font-family: $font--primary;
+}
+h2 {
+  color: $clr--dark;
+  font-family: $font--secondary;
+}
+p {
+    font-size: 1.9rem;
+}
