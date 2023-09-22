@@ -18,6 +18,8 @@
             color: $clr--dark;
             &:hover {
                 text-decoration: underline;
+                color: $clr--primary;
+                transition: .3s ease-in;
             }
         }
       }

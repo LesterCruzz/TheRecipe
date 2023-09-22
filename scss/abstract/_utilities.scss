@@ -2,6 +2,7 @@
 
 $colors: (
   "dark": $clr--dark,
+  "white": $clr--white,
   "light": $clr--light,
   "primary": $clr--primary,
 );
@@ -90,6 +91,10 @@ $positions: absolute, relative, sticky, fixed;
   // margin left
   .ml--#{$i} {
     margin-left: $i + rem;
+  }
+  // margin left and right
+  .my--#{$i} {
+    margin: $i + rem 0;
   }
   // padding top, right, bottom, left
   .p--#{$i} {

@@ -8,5 +8,11 @@
   &.bg--primary {
     background-color: $clr--primary;
     color: $clr--light;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $clr--primary;
+      color: $clr--primary;
+      transition: .3s ease;
+    }
   }
 }

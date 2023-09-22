@@ -1,0 +1,22 @@
+@use "../abstract/" as *;
+
+.footer {
+    padding: 6rem;
+    &__text {
+        text-align: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            a {
+                color: $clr--dark;
+                &:hover {
+                    color: $clr--primary;
+                }
+        }
+    }
+    p {
+        font-size: 1.3rem;
+    }
+}
+}
